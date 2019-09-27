@@ -1,6 +1,6 @@
 {
   "name": "more-less",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This package is going to collapse or expand your content based on the size, specified in the configuration",
   "main": "build/index.js",
   "scripts": {
