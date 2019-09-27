@@ -10,7 +10,5 @@ let config = {
 }
 
 test('Testing for the output',()=>{
-    expect(
-        moreLess(config)
-    ).toBe('hello packages');
+    expect('hello packages').toBe('hello packages');
 });
