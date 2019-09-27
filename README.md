@@ -20,7 +20,7 @@ let config = {
   continuous:false                                  // (optional) New Line for expand and shrink text. Default is FALSE
 }
 
-moreLess(config);       // Returns the dom elements to be rendered in to HTML
+moreLess(config);       // Returns the html String to be rendered in to HTML
 ```
 
 
@@ -72,12 +72,12 @@ export default class Example extends Component {
         moreText:'Open',                          
         lessText:'Close',                          
         isMobile:false,                                
-        continuous:false                               
+        continuous:true                               
     };
     return (
-      <div>
-        {moreLess(config)};
-      </div>
+      <div 
+      dangerouslySetInnerHTML={{__html: moreLess(config)}}
+      />
     )
   }
 }
