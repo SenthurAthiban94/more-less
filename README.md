@@ -1,5 +1,5 @@
 # more-less
-This package can be used to collapse or expand your large content to the specified length mentioned in the configuration with a (Read more / Read less) link.
+This package can be used to collapse or expand your large content to the specified length mentioned in the configuration with a (Read more / Read less) link to toggle.
 
 # Installation
 ```shell

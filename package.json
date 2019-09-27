@@ -1,7 +1,7 @@
 {
   "name": "more-less",
   "version": "1.1.0",
-  "description": "This package can be used to collapse or expand your large content to the specified length mentioned in the configuration with a (Read more / Read less) link.",
+  "description": "This package can be used to collapse or expand your large content to the specified length mentioned in the configuration with a (Read more / Read less) link to toggle.",
   "main": "build/index.js",
   "scripts": {
     "dev": "mkdir -p build && watch 'npm run build' src",
