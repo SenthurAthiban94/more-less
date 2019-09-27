@@ -4,10 +4,9 @@
 ```shell
 $ npm install more-less --save
 ```
-
 # Usage
 ```javascript
-import React, { Component } from 'react'
+// Import Package
 import moreLess from 'more-less';
 
 // Set Configurations
@@ -21,9 +20,60 @@ let config = {
   continuous:false                                  // (optional) New Line for expand and shrink text. Default is FALSE
 }
 
+moreLess(config);       // Returns the dom elements to be rendered in to HTML
+```
+
+
+# CSS Customization
+```css
+/* Styles of triple dots*/
+#readMore-dots-/*Id*/{
+    color:black;
+}
+/* Styles of collapsed text */
+#readMore-more-/*Id*/{
+    /* ... */
+}
+/* Styles of Read More / Read Less Text */
+#readMore-/*Id*/{
+    color:blue;
+}
+```
+
+# Example
+
+## Custom CSS (styles.css)
+```css
+#readMore-dots-exampleId{
+    color:black;
+}
+/* Styles of collapsed text */
+#readMore-more-exampleId{
+    color:grey;
+}
+/* Styles of Read More / Read Less Text */
+#readMore-exampleId{
+    color:blue;
+}
+```
+
+## Index.js
+```javascript
+import moreLess from 'more-less';
+import React, { Component } from 'react'
+import './styles.css';
 
 export default class Example extends Component {
   render() {
+    let config = {
+        text:'I am going to get shrinked and expanded',
+        shortTo:15,                                   
+        id:'exampleId',                          
+        moreText:'Open',                          
+        lessText:'Close',                          
+        isMobile:false,                                
+        continuous:false                               
+    };
     return (
       <div>
         {moreLess(config)};
@@ -31,5 +81,4 @@ export default class Example extends Component {
     )
   }
 }
-
 ```
