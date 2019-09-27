@@ -17,8 +17,8 @@ let config = {
   id:'<< Element id>>',                             // (optional) Identifies the element in the html dom
   moreText:'Read more',                             // (optional) Text to be shown to expand. Default is Read more
   lessText:'Read less',                             // (optional) Text to be shown to shrink. Default is Read less
-  isMobile:false,                                   // (optional) Enable functionality only for mobile default is FALSE
-  continuous:false
+  isMobile:false,                                   // (optional) Enable functionality only for mobile. Default is FALSE
+  continuous:false                                  // (optional) New Line for expand and shrink text. Default is FALSE
 }
 
 
