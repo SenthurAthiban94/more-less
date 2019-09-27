@@ -4,7 +4,7 @@
   "description": "This package is going to collapse or expand your content based on the size, specified in the configuration",
   "main": "build/index.js",
   "scripts": {
-    "dev": "watch 'npm run build' src",
+    "dev": "mkdir -p build && watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest",
     "test:watch": "npm test -- --watch"

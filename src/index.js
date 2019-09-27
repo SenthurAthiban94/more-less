@@ -1,3 +1,3 @@
 export default (string,len)=>{
-    return 'hello packages';
+    return 'hello package';
 }
