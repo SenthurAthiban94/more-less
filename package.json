@@ -1,0 +1,41 @@
+{
+  "name": "more-less",
+  "version": "1.0.0",
+  "description": "This package is going to collapse or expand your content based on the size, specified in the configuration",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenthurAthiban94/more-less.git"
+  },
+  "keywords": [
+    "read-more",
+    "read-less",
+    "more",
+    "less",
+    "expand",
+    "collapse"
+  ],
+  "author": "Senthur Athiban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SenthurAthiban94/more-less/issues"
+  },
+  "homepage": "https://github.com/SenthurAthiban94/more-less#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^24.9.0",
+    "watch": "^1.0.2"
+  }
+}
