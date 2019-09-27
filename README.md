@@ -1,11 +1,11 @@
 # more-less
 
-#Installation
+# Installation
 ```shell
 $ npm install more-less --save
 ```
 
-#Usage
+# Usage
 ```javascript
 import moreLess from 'more-less';
 
